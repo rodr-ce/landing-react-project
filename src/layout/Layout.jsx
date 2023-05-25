@@ -1,35 +1,19 @@
 import React from 'react'
-import { Wrapper, Header, Title, Nav, List, Item } from './LayoutStyles'
-import { Link } from 'react-router-dom'
+import { Wrapper, Header, Title } from './LayoutStyles'
+import NavBar from './NavBar'
 
 const Layout = ({children}) => {
   return (
     <Wrapper>
     <Header>
-        <Title>Titulo</Title>
-        <Nav>
-            <List>
-                <Item>
-                    <Link to={'/'}>Home</Link>
-                </Item>
-                <Item>
-                    <Link to={'/about'}>About</Link>
-                </Item>
-                <Item>
-                    <Link to={'/products'}>Products</Link>
-                </Item>
-                <Item>
-                    <Link to={'/login'}>Login</Link>
-                </Item>
-            </List>
-        </Nav>
+        <Title>Platino <span>disqueria</span></Title>
+        <NavBar />
     </Header>
     <div>{children}</div>
     <footer>
         Footer
     </footer>
     </Wrapper>
-    
   )
 }
 
