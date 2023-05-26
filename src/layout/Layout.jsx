@@ -1,18 +1,17 @@
 import React from 'react'
 import { Wrapper, Header, Title } from './LayoutStyles'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <Wrapper>
-    <Header>
-        <Title>Platino <span>disqueria</span></Title>
+      <Header>
+        <Title>Cronos <span>disqueria</span></Title>
         <NavBar />
-    </Header>
-    <div>{children}</div>
-    <footer>
-        Footer
-    </footer>
+      </Header>
+      <div>{children}</div>
+      <Footer />
     </Wrapper>
   )
 }

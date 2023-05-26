@@ -20,10 +20,6 @@ export const GlobalStyles = createGlobalStyle`
         justify-content: space-around;
     }
 
-    a {
-        text-decoration: none;
-    }
-
     li {
         list-style-type: none;
     }

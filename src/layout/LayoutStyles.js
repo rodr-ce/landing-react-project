@@ -62,3 +62,22 @@ export const Button = styled(FaBars)`
 
   color: white;
 `;
+
+export const FooterWrapper = styled.div`
+width: 100vw;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 15px;
+`
+
+export const FooterLegend = styled.div`
+`
+
+export const FooterLinks = styled.div`
+display: flex;
+gap: 20px;
+font-size: 20px;
+color: white;
+`

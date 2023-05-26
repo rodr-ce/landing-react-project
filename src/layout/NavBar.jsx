@@ -9,21 +9,23 @@ const NavBar = () => {
     setOpen(!open)
   }
 
+
+
   return (
     <Nav>
       <Button onClick={() => handleClick()} aria-label="Toggle navigation menu" ></Button>
       <List open={open} className={open ? 'openList' : ''}>
         <Item>
-          <Link to={'/'}>Home</Link>
+          <Link onClick={() => setOpen(false)} to={'/'}>Home</Link>
         </Item>
         <Item>
-          <Link to={'/about'}>About</Link>
+          <Link onClick={() => setOpen(false)} to={'/about'}>About</Link>
         </Item>
         <Item>
-          <Link to={'/products'}>Products</Link>
+          <Link onClick={() => setOpen(false)} to={'/products'}>Products</Link>
         </Item>
         <Item>
-          <Link to={'/login'}>Login</Link>
+          <Link onClick={() => setOpen(false)} to={'/login'}>Login</Link>
         </Item>
       </List>
     </Nav>
