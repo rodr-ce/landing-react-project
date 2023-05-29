@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaShoppingCart } from "react-icons/fa";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
@@ -11,12 +11,15 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 100vw;
   height: 70px;
 `;
 
 export const Title = styled.h2`
+    font-size: 2em;
+    margin: 20px;
     & span {
         font-size: 10px;
     }
@@ -34,6 +37,7 @@ export const Nav = styled.nav`
 export const List = styled.ul`
   display: flex;
   gap: 30px;
+  background-color: var(--dark-background);
 
   @media (max-width: 500px) {
     z-index: 3;
@@ -63,7 +67,11 @@ export const Button = styled(FaBars)`
   color: white;
 `;
 
+export const Cart = styled(FaShoppingCart)`
+`
+
 export const FooterWrapper = styled.div`
+margin-top: 30px;
 width: 100vw;
 display: flex;
 flex-direction: row;

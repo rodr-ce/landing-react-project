@@ -12,6 +12,13 @@ export const GlobalStyles = createGlobalStyle`
         --blue: #0089ba;
     }
 
+    * {
+/*         border: 1px solid white;
+ */        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
     body {
         background-color: var(--dark-background);
         color: var(--dark-font-color);
