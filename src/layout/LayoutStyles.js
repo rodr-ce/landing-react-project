@@ -13,7 +13,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 90vw;
   height: 70px;
 `;
 
@@ -72,7 +72,7 @@ export const Cart = styled(FaShoppingCart)`
 
 export const FooterWrapper = styled.div`
 margin-top: 30px;
-width: 100vw;
+width: 90vw;
 display: flex;
 flex-direction: row;
 align-items: center;

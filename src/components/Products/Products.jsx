@@ -1,11 +1,15 @@
 import React from 'react'
 import { albumsStock, booksStock } from '../../assets/stock'
 import { Article, Button, ProductsWrapper, ButtonConteiner } from './ProductStyles'
-import {FaCartPlus} from 'react-icons/fa'
+import { FaCartPlus } from 'react-icons/fa'
 
 const Products = () => {
   return (
     <>
+      <div>
+        Productos
+        <select name="que buscas" id="product-selection"></select>
+      </div>
       <ProductsWrapper>
         {albumsStock.map((item) => (
           <Article key={item.id}>
@@ -14,7 +18,7 @@ const Products = () => {
             <p>{item.artist}</p>
             <p className='italic'>${item.price}</p>
             <ButtonConteiner>
-              <Button className='add' ><FaCartPlus/></Button>
+              <Button className='add' ><FaCartPlus /></Button>
               <Button >Comprar</Button>
             </ButtonConteiner>
           </Article>

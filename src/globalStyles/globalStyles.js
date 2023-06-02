@@ -13,8 +13,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     * {
-/*         border: 1px solid white;
- */        box-sizing: border-box;
+/*      border: 1px solid white;*/
+        box-sizing: border-box;
         padding: 0;
         margin: 0;
     }

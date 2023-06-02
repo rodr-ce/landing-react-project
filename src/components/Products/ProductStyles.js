@@ -4,8 +4,7 @@ import { styled } from "styled-components";
 export const ProductsWrapper = styled.div`
   max-width: 1300px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 50px;
 `;
