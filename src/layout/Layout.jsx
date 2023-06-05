@@ -1,7 +1,9 @@
 import React from 'react'
-import { Wrapper, Header, Title, Cart } from './LayoutStyles'
+import { Wrapper, Header, Title, Cart as CartIcon } from './LayoutStyles'
+import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import { Cart } from '../components/Cart/Cart'
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +11,7 @@ const Layout = ({ children }) => {
       <Header>
         <Title>Cronos <span>disqueria</span></Title>
         <NavBar />
-        <Cart/>
+        <Link to={'/cart'}><CartIcon/></Link>
       </Header>
       <div>{children}</div>
       <Footer />

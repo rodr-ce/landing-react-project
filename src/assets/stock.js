@@ -161,7 +161,9 @@ export const albumsStock = [
     }
   ];
 
-export const booksStock = [
+
+// Para implementa r a futuro 
+/* export const booksStock = [
     {
       id: "0001",
       author: "Jorge Luis Borges",
@@ -322,4 +324,4 @@ export const booksStock = [
       price: 190.00,
       img: "https://example.com/lacasainundada.jpg"
     }
-  ];
+  ]; */
