@@ -17,7 +17,7 @@ export const Cart = () => {
                         <CartList>
                             {cartItems.map((item) => {
                                 return (
-                                    <CartItemCard key={item.id}>
+                                    <CartItemCard key={item.album}>
                                         <div>
                                             <div>
                                                 <CardImage src={item.img} alt={item.album} />
@@ -36,7 +36,7 @@ export const Cart = () => {
                                 )
                             })}
                         </CartList>
-                        <h4>Total de tu compra: ${cartItems.reduce((total, item) => total + item.price, 0)}</h4>
+                        <h4>Total de tu compra: ${ cartItems.reduce((total, item) => total + item.price, 0) }</h4>
                         <CartButtonConteiner>
                             <button className='dark-red' onClick={() => clearCart()}>Borrar todo</button>
 

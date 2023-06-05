@@ -4,7 +4,6 @@ import {
   CLEAR,
 } from "./CartTypes.js";
 
-
 const CartReducer = (state, action) => {
   switch (action.type) {
     case ADD_TO_CART:
@@ -31,6 +30,7 @@ const CartReducer = (state, action) => {
     case CLEAR:
       return {
         cartItems: [],
+        storage: []
       };
 
     default:
