@@ -15,7 +15,7 @@ const Login = (props) => {
       <LoginConteiner>
       <div onClick={props.toggle} ><CloseWindow/></div>
         <h3>Ingresá</h3>
-        <LoginForm action="">
+        <LoginForm action="post">
           <fieldset>
             <label htmlFor="email">Email:</label>
             <input type="email" />

@@ -3,6 +3,8 @@ import { Nav, List, Item, Button  } from './LayoutStyles'
 import { Link } from 'react-router-dom'
 import Login from '../components/Login/Login'
 
+const currentUser = 0
+
 const NavBar = () => {
   const [open, setOpen] = useState(false)
 
@@ -25,13 +27,13 @@ const NavBar = () => {
           <Link onClick={() => setOpen(false)} to={'/'}>Home</Link>
         </Item>
         <Item>
-          <Link onClick={() => setOpen(false)} to={'/about'}>About</Link>
+          <Link onClick={() => setOpen(false)} to={'/about'}>Nosotros</Link>
         </Item>
         <Item>
-          <Link onClick={() => setOpen(false)} to={'/products'}>Products</Link>
+          <Link onClick={() => setOpen(false)} to={'/products'}>Productos</Link>
         </Item>
-        <Item>
-          <Link onClick={() => displayLogin() } >Login</Link>
+        <Item> 
+          {currentUser? <p>{currentUser.username}</p> : <Link onClick={() => displayLogin() } >Ingresar</Link>}
         </Item>
       </List>
       {showLogin ? <Login toggle={displayLogin}/> : null}
