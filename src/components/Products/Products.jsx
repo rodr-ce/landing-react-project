@@ -8,7 +8,7 @@ const Products = () => {
     <>
       <ProductsWrapper>
         {albumsStock.map((item) => (
-          <ProductCard key={item.id} item={item} />
+          <ProductCard key={item.id} {...item} />
         ))}
       </ProductsWrapper>
     </>

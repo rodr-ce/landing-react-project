@@ -162,7 +162,7 @@ export const albumsStock = [
   ];
 
 
-// Para implementa r a futuro 
+// Para implementar a futuro 
 /* export const booksStock = [
     {
       id: "0001",

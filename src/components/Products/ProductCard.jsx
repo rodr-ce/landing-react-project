@@ -1,20 +1,20 @@
 import React from 'react'
 import { Article, Button, ButtonConteiner } from './ProductStyles'
-import CartContext from '../../context/ProductContext/CartContext';
-import { useContext } from "react";
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../../redux/cart/cartSlice'
 
-
-export const ProductCard = ({item}) => {
-    const { addToCart  } = useContext(CartContext);
+export const ProductCard = ({id, img, album, artist, price}) => {
+    const dispatch = useDispatch()
 
     return (
-        <Article key={item.id}>
-            <img src={item.img} alt="imagen de album" width={200} />
-            <h3>{item.album}</h3>
-            <p>{item.artist}</p>
-            <p className='italic'>${item.price}</p>
+        <Article key={id}>
+            <img src={img} alt="imagen de album" width={200} />
+            <h3>{album}</h3>
+            <p>{artist}</p>
+            <p className='italic'>${price}</p>
             <ButtonConteiner>
-                        <Button onClick={() => {addToCart(item)}}>Agregar al carrito</Button>     
+                        <Button onClick={()=>
+                        dispatch(addToCart({id, img, album, artist, price}))} >Agregar al carrito</Button>     
             </ButtonConteiner>
         </Article>
     )

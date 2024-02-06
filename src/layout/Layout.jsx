@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <Header>
         <Title>Cronos <span>disqueria</span></Title>
         <NavBar />
-        <Link to={'/cart'}><CartIcon/></Link>
+        <Link to={'/mi-carrito'}><CartIcon/></Link>
       </Header>
       <div>{children}</div>
       <Footer />

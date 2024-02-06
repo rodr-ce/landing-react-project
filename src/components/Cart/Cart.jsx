@@ -1,19 +1,16 @@
 import React, { useContext } from 'react'
 import { ButtonConteiner, CardImage, CardButton, CartItemCard, CartList, CartWrapper, CartItemInfo, CartButtonConteiner } from './CartStyles'
-import CartContext from '../../context/ProductContext/CartContext';
 import { FaTrashAlt } from 'react-icons/fa'
 
 
 
 export const Cart = () => {
-
-    const { cartItems, clearCart, removeFromCart, increase, decrease } = useContext(CartContext);
-
+    
     return (
         <CartWrapper>
             {
-                cartItems.length === 0 ? <span>El Carrito esta vacio</span> :
-                    <>
+                /* cartItems.length === 0 ?  */<span>El Carrito esta vacio</span>/* :
+                    { <>
                         <CartList>
                             {cartItems.map((item) => {
                                 return (
@@ -30,19 +27,19 @@ export const Cart = () => {
 
                                         </div>
                                         <ButtonConteiner>
-                                            <CardButton onClick={() => removeFromCart(item)}><FaTrashAlt></FaTrashAlt></CardButton>
+                                            <CardButton ><FaTrashAlt></FaTrashAlt></CardButton>
                                         </ButtonConteiner>
                                     </CartItemCard>
                                 )
                             })}
                         </CartList>
-                        <h4>Total de tu compra: ${ cartItems.reduce((total, item) => total + item.price, 0) }</h4>
+                        <h4>Total de tu compra: $000</h4>
                         <CartButtonConteiner>
-                            <button className='dark-red' onClick={() => clearCart()}>Borrar todo</button>
+                            <button className='dark-red'>Borrar todo</button>
 
                             <button className='blue'> Finalizar Compra</button>
                         </CartButtonConteiner>
-                    </>
+                    </> }*/
             }
 
         </CartWrapper>
